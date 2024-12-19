@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <style>
+        body, h2, form, label {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+
+        /* Label styling */
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+            border-color: #4CAF50;
+            background-color: #fff;
+            outline: none;
+        }
+
+        fieldset {
+            border: none;
+            margin-bottom: 20px;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 15px; 
+        }
+
+        legend {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        a {
+            text-decoration: none;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 480px) {
+            form {
+                width: 90%;
+                padding: 20px;
+            }
+
+            button[type="submit"] {
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <form action="https://formsubmit.co/f166b27f56fd44d757907a46605788d2" method="POST">
+        <br><br><br>
+        <h2>Request Form</h2>
+
+        <label for="name">Requester's Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Requester's Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        
+        <label for="name">Requester's Title:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="employeename">Employee's Name:</label>
+        <input type="text" id="employeename" name="employeename" required><br>
+
+        <label for="employeeemail">Employee's Email:</label>
+        <input type="email" id="employeeemail" name="employeeemail" required><br>
+
+        <label for="amount">Amount: </label>
+        <input type="text" id="amount" name="amount" required><br>
+
+        <label for="por">Purpose of request:</label>
+        <input type="text" id="por" name="por" required><br>
+
+        <fieldset>
+            <legend>Click either or both of the following:</legend>
+
+            <input type="checkbox" id="RampCard" name="Ramp" value="RampCard">
+            <label for="RampCard">Ramp Card</label><br>
+
+            <input type="checkbox" id="Egencia" name="Egencia" value="Egencia">
+            <label for="Egencia">Egencia</label><br>
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <p>
+        &emsp;Please make sure to let the requester read the policies before submitting the form: <br>
+        <ul>
+        <li>&emsp;<a href="https://cdn.discordapp.com/attachments/1294305279009357844/1319142275632201789/Corporate_Card_Policy_New_letter_Head.pdf?ex=6764e27a&is=676390fa&hm=1d763a6005edbb3397a62bfb6cfeed2f721c001c643abf3504226479f6ec8007&">Card Policy</a><br></li>
+        <li>&emsp;<a href="https://cdn.discordapp.com/attachments/1294305279009357844/1319142314777640971/Travel_Policy_updated_04.04.22.pdf?ex=6764e284&is=67639104&hm=76ef3bb321a416ee7945c66cb00b04e49889cb38ea900d4eeebd5355e5832331&">Travel Policy</a></li>
+        </ul>
+    </p>
+
+</body>
+</html>
